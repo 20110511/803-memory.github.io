@@ -328,6 +328,8 @@ body {
     backdrop-filter: blur(10px);
     z-index: 9999;
     animation: fadeIn 0.3s ease-out;
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
 }
 
 .gallery-modal.active {
@@ -379,6 +381,9 @@ body {
     border-radius: 50%;
     transition: all 0.3s ease;
     line-height: 1;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
 }
 
 .gallery-close-btn:hover {
@@ -409,6 +414,8 @@ body {
     cursor: pointer;
     user-select: none;
     min-height: 400px;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .gallery-image-container img {
@@ -454,6 +461,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
 }
 
 .floating-btn:hover {
@@ -488,6 +498,9 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
     border: 2px solid rgba(255, 255, 255, 0.3);
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
 }
 
 .gallery-modal-indicators .indicator.active {
