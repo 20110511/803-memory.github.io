@@ -1,0 +1,133 @@
+/* 桌面端样式 (768px以上) */
+
+.container {
+    padding: 0 40px;
+}
+
+/* 桌面端显示导航菜单 */
+.desktop-nav {
+    display: block !important;
+}
+
+/* 隐藏手机端导航 */
+.mobile-nav {
+    display: none !important;
+}
+
+.title {
+    font-size: 3rem;
+}
+
+.creator-info p {
+    font-size: 1.2rem;
+    margin: 0 30px;
+}
+
+.countdown-display {
+    gap: 40px;
+}
+
+.countdown-item {
+    padding: 30px;
+    min-width: 120px;
+}
+
+.countdown-number {
+    font-size: 3.5rem;
+}
+
+.countdown-label {
+    font-size: 1.3rem;
+}
+
+.gallery-wrapper {
+    height: 500px;
+}
+
+.gallery-controls {
+    gap: 20px;
+}
+
+.gallery-btn {
+    padding: 15px 25px;
+    font-size: 1.2rem;
+}
+
+.prev-btn, .next-btn {
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.music-player {
+    padding: 40px;
+}
+
+.music-controls {
+    gap: 30px;
+}
+
+.music-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 1.4rem;
+}
+
+#volumeSlider {
+    width: 150px;
+}
+
+/* 桌面端悬停效果 */
+.countdown-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-slide img:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+}
+
+/* 桌面端特殊布局 */
+.music-info {
+    margin-bottom: 30px;
+}
+
+.music-info h3 {
+    font-size: 1.8rem;
+}
+
+.progress-bar {
+    margin-top: 20px;
+    height: 8px;
+}
+
+/* 响应式调整 */
+@media (min-width: 1200px) {
+    .container {
+        padding: 0 60px;
+    }
+    
+    .title {
+        font-size: 3.5rem;
+    }
+    
+    .gallery-wrapper {
+        height: 600px;
+    }
+    
+    .countdown-display {
+        gap: 50px;
+    }
+    
+    .countdown-item {
+        padding: 40px;
+        min-width: 140px;
+    }
+    
+    .countdown-number {
+        font-size: 4rem;
+    }
+} 

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深圳市光明区长育学校八年级三班回忆录</title>
+    <link rel="stylesheet" href="css/desktop.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+    <!-- 全局音乐控件 -->
+    <div class="global-music-control">
+        <button class="global-music-btn" id="globalMusicBtn" title="背景音乐">🔊</button>
+        <audio id="globalAudioPlayer" preload="metadata" loop>
+            <source src="MP3/1.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- 主页内容 -->
+    <div class="main-layout">
+        <!-- 左侧：网站信息 -->
+        <div class="info-section">
+            <h1 class="main-title">深圳市光明区长育学校<br>八年级三班回忆录</h1>
+            <div class="subtitle">记录我们的青春时光</div>
+            <div class="creator-info">
+                <p>创作者：占俊凡</p>
+                <p>网站管理：占俊凡</p>
+                <p>如有不妥或侵权请联系：15914081367<br>微信号：zjfbestlovepyjs</p>
+            </div>
+            <div class="disclaimer">
+                <p><strong>重要声明：本网站由独立开发，并非学校官方开发</strong></p>
+            </div>
+            
+            <!-- 回忆册入口按钮 -->
+            <div class="gallery-entrance">
+                <button class="gallery-btn" id="openGalleryBtn">
+                    <div class="gallery-btn-icon">📸</div>
+                    <div class="gallery-btn-text">打开回忆册</div>
+                </button>
+            </div>
+        </div>
+
+        <!-- 右侧：中考倒计时 -->
+        <div class="countdown-section">
+            <h2 class="countdown-title">中考倒计时</h2>
+            <p class="countdown-subtitle">距离人生重要节点还有</p>
+            <div class="countdown-display">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">0</span>
+                    <span class="countdown-label">天</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">0</span>
+                    <span class="countdown-label">小时</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">0</span>
+                    <span class="countdown-label">分钟</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">0</span>
+                    <span class="countdown-label">秒</span>
+                </div>
+            </div>
+            <div class="motivational-text">
+                <h3>加油！为梦想拼搏的日子</h3>
+                <p>每一天都是新的开始，每一秒都值得珍惜</p>
+            </div>
+        </div>
+    </div>
+
+        <!-- 回忆册弹窗 -->
+    <div class="gallery-modal" id="galleryModal">
+        <div class="gallery-modal-content">
+            <div class="gallery-modal-header">
+                <h2 class="gallery-modal-title">回忆册</h2>
+                <button class="gallery-close-btn" id="closeGalleryBtn">×</button>
+            </div>
+            
+            <div class="gallery-modal-body">
+                <div class="gallery-image-container" id="galleryImageContainer">
+                    <!-- 图片将通过JavaScript动态加载 -->
+                </div>
+                
+                <!-- 悬浮控制按钮 -->
+                <div class="gallery-floating-controls">
+                    <button class="floating-btn flower-btn" id="modalFlowerBtn" title="献花">🌸</button>
+                    <button class="floating-btn download-btn" id="modalDownloadBtn" title="下载图片">⬇️</button>
+                </div>
+                
+                <!-- 指示器 -->
+                <div class="gallery-modal-indicators" id="galleryModalIndicators">
+                    <!-- 指示器将通过JavaScript动态生成 -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 水波纹效果容器 -->
+    <div id="rippleContainer"></div>
+
+    <!-- 鲜花动画容器 -->
+    <div id="flowerContainer"></div>
+
+    <!-- JavaScript文件 -->
+    <script src="js/countdown.js"></script>
+    <script src="js/effects.js"></script>
+    <script src="js/global-music.js"></script>
+    <script src="js/gallery-modal.js"></script>
+</body>
+</html> 

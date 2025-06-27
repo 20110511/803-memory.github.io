@@ -1,0 +1,692 @@
+/* 手机端样式 (767px以下) */
+
+.container {
+    padding: 0 15px;
+}
+
+/* 手机端显示底部导航 */
+.mobile-nav {
+    display: flex !important;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    z-index: 1000;
+    box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.mobile-nav-item {
+    flex: 1;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    color: #7f8c8d;
+    transition: all 0.3s ease;
+}
+
+.mobile-nav-item.active {
+    color: #3498db;
+}
+
+.mobile-nav-item:hover {
+    color: #3498db;
+    transform: translateY(-2px);
+}
+
+.mobile-nav-icon {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+}
+
+.mobile-nav-text {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* 隐藏桌面端导航 */
+.desktop-nav {
+    display: none !important;
+}
+
+/* 手机端主页布局调整 */
+.main-layout {
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+    height: 100vh;
+}
+
+.info-section {
+    padding: 20px 15px;
+    border-radius: 20px;
+}
+
+.countdown-section {
+    padding: 20px 15px;
+    border-radius: 20px;
+}
+
+.main-title {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+
+.subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+}
+
+.countdown-title {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+}
+
+.countdown-subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+}
+
+.countdown-display {
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.countdown-item {
+    padding: 12px 8px;
+    border-radius: 12px;
+    min-width: 60px;
+}
+
+.countdown-number {
+    font-size: 1.2rem;
+    margin-bottom: 3px;
+}
+
+.countdown-label {
+    font-size: 0.7rem;
+}
+
+.creator-info {
+    margin-bottom: 15px;
+}
+
+.creator-info p {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+.disclaimer {
+    margin-bottom: 20px;
+}
+
+.disclaimer p {
+    font-size: 0.75rem;
+}
+
+.gallery-btn {
+    padding: 12px 25px;
+    font-size: 0.95rem;
+    max-width: 250px;
+    gap: 10px;
+}
+
+.gallery-btn-icon {
+    font-size: 1.2rem;
+}
+
+.gallery-btn-text {
+    font-size: 0.95rem;
+}
+
+.motivational-text {
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.motivational-text h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.motivational-text p {
+    font-size: 0.8rem;
+}
+
+/* 手机端回忆册页面调整 */
+.gallery-page-container {
+    padding: 60px 15px 15px;
+}
+
+.gallery-header {
+    margin-bottom: 15px;
+    padding: 10px 0;
+}
+
+.gallery-title {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.gallery-subtitle {
+    font-size: 0.95rem;
+}
+
+.gallery-main {
+    padding: 18px;
+    border-radius: 20px;
+    gap: 15px;
+    grid-template-rows: 1fr auto auto auto;
+}
+
+.gallery-wrapper {
+    border-radius: 15px;
+    min-height: 250px;
+}
+
+.gallery-controls {
+    gap: 8px;
+    flex-wrap: wrap;
+    padding: 0 5px;
+}
+
+.gallery-btn {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+    border-radius: 18px;
+}
+
+.prev-btn, .next-btn {
+    font-size: 1.2rem;
+    padding: 8px 12px;
+}
+
+.gallery-actions {
+    gap: 8px;
+    padding: 0 5px;
+}
+
+.action-btn {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+    border-radius: 18px;
+}
+
+.gallery-indicators {
+    gap: 6px;
+    padding: 8px 0;
+}
+
+.indicator {
+    width: 8px;
+    height: 8px;
+}
+
+.back-home {
+    top: 10px;
+    left: 10px;
+}
+
+.back-btn {
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    border-radius: 15px;
+    min-width: auto;
+}
+
+.global-music-control {
+    top: 10px;
+    right: 10px;
+}
+
+.global-music-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 1.1rem;
+}
+
+/* 手机端弹窗样式调整 */
+.gallery-modal.active {
+    padding: 8px;
+}
+
+.gallery-modal-content {
+    max-height: 98vh;
+    border-radius: 18px;
+}
+
+.gallery-modal-header {
+    padding: 12px 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.gallery-modal-title {
+    font-size: 1.2rem;
+}
+
+.gallery-close-btn {
+    font-size: 1.5rem;
+    padding: 2px 6px;
+    width: 30px;
+    height: 30px;
+}
+
+.gallery-modal-body {
+    padding: 15px;
+}
+
+.gallery-image-container {
+    min-height: 250px;
+    border-radius: 12px;
+}
+
+.gallery-floating-controls {
+    top: 10px;
+    left: 10px;
+    gap: 6px;
+}
+
+.floating-btn {
+    width: 38px;
+    height: 38px;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.gallery-modal-indicators {
+    gap: 5px;
+    margin-top: 12px;
+    padding: 3px 0;
+}
+
+.gallery-modal-indicators .indicator {
+    width: 6px;
+    height: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.gallery-modal-indicators .indicator.active {
+    transform: scale(1.2);
+}
+
+.header {
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.creator-info {
+    margin-bottom: 10px;
+}
+
+.creator-info p {
+    display: block;
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.disclaimer {
+    font-size: 0.85rem;
+    padding: 8px;
+    margin: 10px auto;
+}
+
+/* 手机端导航菜单 */
+.nav-menu {
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.nav-item {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+}
+
+/* 手机端节标题 */
+section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+/* 手机端倒计时 */
+.countdown-section {
+    margin-bottom: 30px;
+}
+
+.countdown-display {
+    gap: 15px;
+    justify-content: space-around;
+}
+
+.countdown-item {
+    padding: 15px 10px;
+    min-width: 70px;
+    flex: 1;
+    max-width: 80px;
+}
+
+.countdown-number {
+    font-size: 2rem;
+}
+
+.countdown-label {
+    font-size: 0.9rem;
+}
+
+/* 手机端回忆册 */
+.gallery-section {
+    margin-bottom: 30px;
+}
+
+.gallery-container {
+    padding: 20px 15px;
+}
+
+.gallery-wrapper {
+    height: 250px;
+    margin-bottom: 15px;
+}
+
+.gallery-controls {
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.gallery-btn {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+}
+
+.prev-btn, .next-btn {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0;
+}
+
+.auto-btn {
+    width: 48%;
+    margin-top: 10px;
+}
+
+.flower-btn {
+    width: 48%;
+    margin-top: 10px;
+}
+
+/* 手机端操作按钮 */
+.gallery-actions {
+    gap: 10px;
+}
+
+.action-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+}
+
+.gallery-indicators {
+    gap: 8px;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+}
+
+/* 手机端音乐播放器 */
+.music-section {
+    margin-bottom: 30px;
+}
+
+.music-player {
+    padding: 20px 15px;
+}
+
+.music-info {
+    margin-bottom: 15px;
+}
+
+.music-info h3 {
+    font-size: 1.3rem;
+}
+
+.music-info p {
+    font-size: 0.9rem;
+}
+
+.music-controls {
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.music-btn {
+    width: 45px;
+    height: 45px;
+    font-size: 1.1rem;
+}
+
+.volume-control {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#volumeSlider {
+    width: 200px;
+}
+
+.progress-bar {
+    height: 5px;
+    margin-top: 15px;
+}
+
+/* 手机端页脚 */
+.footer {
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+.footer p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+/* 手机端触摸优化 */
+.gallery-btn,
+.music-btn,
+.indicator {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+}
+
+/* 手机端动画优化 */
+.countdown-item,
+.gallery-container,
+.music-player {
+    animation-duration: 0.4s;
+}
+
+/* 竖屏小屏幕优化 */
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.5rem;
+    }
+    
+    .countdown-display {
+        gap: 8px;
+    }
+    
+    .countdown-item {
+        padding: 12px 8px;
+        min-width: 60px;
+    }
+    
+    .countdown-number {
+        font-size: 1.6rem;
+    }
+    
+    .countdown-label {
+        font-size: 0.8rem;
+    }
+    
+    .gallery-wrapper {
+        height: 200px;
+    }
+    
+    section h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* 横屏手机优化 */
+@media (max-width: 767px) and (orientation: landscape) {
+    .header {
+        padding: 10px 0;
+    }
+    
+    .title {
+        font-size: 1.6rem;
+    }
+    
+    .countdown-display {
+        gap: 20px;
+    }
+    
+    .gallery-wrapper {
+        height: 300px;
+    }
+    
+    section {
+        margin-bottom: 25px;
+    }
+}
+
+/* 超小屏幕优化 (iPhone SE等) */
+@media (max-width: 375px) {
+    .main-layout {
+        padding: 10px;
+        gap: 10px;
+    }
+    
+    .info-section,
+    .countdown-section {
+        padding: 15px 10px;
+        border-radius: 15px;
+    }
+    
+    .main-title {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    
+    .subtitle {
+        font-size: 0.8rem;
+        margin-bottom: 15px;
+    }
+    
+    .countdown-title {
+        font-size: 1.4rem;
+        margin-bottom: 5px;
+    }
+    
+    .countdown-subtitle {
+        font-size: 0.75rem;
+        margin-bottom: 15px;
+    }
+    
+    .countdown-item {
+        padding: 8px 6px;
+        min-width: 50px;
+    }
+    
+    .countdown-number {
+        font-size: 1rem;
+    }
+    
+    .countdown-label {
+        font-size: 0.6rem;
+    }
+    
+    .creator-info p {
+        font-size: 0.7rem;
+    }
+    
+    .disclaimer p {
+        font-size: 0.65rem;
+    }
+    
+    .gallery-btn {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+        max-width: 200px;
+    }
+    
+    .gallery-btn-icon {
+        font-size: 1rem;
+    }
+    
+    .gallery-btn-text {
+        font-size: 0.85rem;
+    }
+    
+    .global-music-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+    
+    .gallery-modal.active {
+        padding: 5px;
+    }
+    
+    .gallery-modal-header {
+        padding: 10px 12px;
+    }
+    
+    .gallery-modal-title {
+        font-size: 1rem;
+    }
+    
+    .gallery-close-btn {
+        font-size: 1.3rem;
+        width: 28px;
+        height: 28px;
+    }
+    
+    .gallery-modal-body {
+        padding: 12px;
+    }
+    
+    .gallery-image-container {
+        min-height: 200px;
+    }
+    
+    .floating-btn {
+        width: 32px;
+        height: 32px;
+        font-size: 0.9rem;
+    }
+    
+    .gallery-floating-controls {
+        top: 8px;
+        left: 8px;
+        gap: 4px;
+    }
+    
+    .gallery-modal-indicators .indicator {
+        width: 5px;
+        height: 5px;
+    }
+} 
